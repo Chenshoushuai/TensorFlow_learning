@@ -55,3 +55,4 @@ with tf.Session() as sess:
 		acc = sess.run(accuracy,feed_dict={x:mnist.test.images,y:mnist.test.labels})
 		#train_acc= sess.run(accuracy,feed_dict={x:mnist.train.images,y:mnist.train.labels,keep_prob:1.0})
 		print("Iter"+ str(epoch)+ ", Testing Accuracy " + str(acc))
+#tensorboard --logdir=
